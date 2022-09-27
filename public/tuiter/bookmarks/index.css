@@ -1,0 +1,51 @@
+.wd-bookmarks {
+  color: white;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.wd-handle {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+hr {
+  border: 1px solid rgb(47, 51, 54);
+  margin: 0;
+}
+
+.wd-bookmark-post {
+  display: flex;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.wd-profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.wd-user {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.wd-user span {
+  color: rgb(110, 118, 125);
+  font-weight: normal;
+}
+
+.wd-post-content {
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  max-width: 506px;
+  margin-left: 0;
+  margin-top: 5px;
+}
