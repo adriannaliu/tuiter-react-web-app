@@ -6,7 +6,7 @@
   background-color: rgb(47, 51, 54);
   border-style: solid;
   border-color: rgb(47, 51, 54);
-  width: 1000px;
+  width: auto;
   margin: 0;
 }
 
@@ -16,6 +16,7 @@
   padding: 14px 16px;
   font-size: 30px;
   margin-right: 12px;
+  text-decoration: none;
 }
 
 .wd-top-bar {
@@ -37,10 +38,15 @@ hr {
   font-size: 15px;
   font-weight: bold;
   padding: 16px;
+  list-style-type: none;
+}
+
+.wd-top-bar li a {
+  text-decoration: none;
   color: rgb(110, 118, 125);
 }
 
-.wd-top-bar > .wd-for-you-link {
+.wd-top-bar > .wd-for-you-link a {
   color: rgb(29, 161, 242);
   border-bottom: 3px solid rgb(29, 161, 242);
   border-radius: 2px;

@@ -94,12 +94,16 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   text-align: left;
-  color: rgb(110, 118, 125);
   list-style-type: none;
   margin-left: 0;
   padding: 0;
 }
 
-.wd-likes {
+.wd-post-reactions a {
+  color: rgb(110, 118, 125);
+  text-decoration: none;
+}
+
+.wd-post-reactions ul > .wd-likes a {
   color: deeppink;
 }
