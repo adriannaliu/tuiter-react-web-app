@@ -2,11 +2,13 @@
   color: white;
   font-size: 20px;
   margin-right: 12px;
+  margin-bottom: 0;
 }
 
 .wd-handle {
   color: rgb(110, 118, 125);
   font-size: 13px;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
@@ -19,6 +21,8 @@ hr {
   display: flex;
   margin: 0;
   justify-content: flex-start;
+  font-size: 15px;
+  color: white;
 }
 
 .wd-profile-pic {
@@ -30,10 +34,9 @@ hr {
 }
 
 .wd-user {
-  color: white;
-  font-size: 15px;
   font-weight: bold;
   margin-top: 12px;
+  margin-left: 0;
 }
 
 .wd-user span {
@@ -42,10 +45,61 @@ hr {
 }
 
 .wd-post-content {
-  color: white;
-  font-size: 15px;
   font-weight: normal;
   max-width: 506px;
   margin-left: 0;
   margin-top: 5px;
+}
+
+.wd-main-content-pic {
+  width: 504px;
+  height: 264px;
+  margin-left: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: 1px solid rgb(110, 118, 125);
+  border-left: 1px solid rgb(110, 118, 125);
+  border-right: 1px solid rgb(110, 118, 125);
+}
+
+.wd-post-replies {
+  margin-left: 0;
+}
+
+.wd-post-replies > .wd-reply-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 12px 5px 12px;
+  border-left: 1px solid rgb(110, 118, 125);
+  border-right: 1px solid rgb(110, 118, 125);
+}
+
+.wd-post-replies > .wd-reply-content {
+  color: rgb(110, 118, 125);
+  font-weight: normal;
+  margin-left: 0;
+  margin-top: 0;
+  max-width: 492px;
+  padding: 0 0 12px 12px;
+  border: 1px solid rgb(110, 118, 125);
+  border-top: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.wd-post-reactions ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  color: rgb(110, 118, 125);
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.wd-likes {
+  color: deeppink;
 }
