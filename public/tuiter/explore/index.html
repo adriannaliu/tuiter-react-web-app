@@ -12,49 +12,58 @@
 </head>
 <body>
   <div class="container">
+    <div class="d-block d-sm-none fa-2x">XS</div>
+    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+    <div class="d-none d-xxl-block fa-2x">XXL</div>
+
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 col-xxl-2 col-xl-2 col-lg-1">
         <ul class="list-group">
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fab fa-twitter">
             </i>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-home">
             </i>
-            Home
+            <span class="d-none d-xxl-block d-xl-block">
+              Home
+            </span>
           </li>
-          <li class="list-group-item active">
+          <li class="list-group-item list-group-item-action active">
             <i class="fas fa-hashtag">
             </i>
             Explore
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-bell">
             </i>
             Notifications
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-envelope">
             </i>
             Messages
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-bookmark">
             </i>
             Bookmarks
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-list">
             </i>
             Lists
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <i class="fas fa-user">
             </i>
             Profile
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-action">
             <span class="fa-stack wd-override-more">
               <i class="fas fa-circle fa-stack-2x">
               </i>
@@ -69,11 +78,15 @@
         </button>
       </div>
 
-      <div class="col-6">
-        <input class="wd-override-search fa-font-awesome" type="text" placeholder="&#xf002; Search Twitter"/>
+      <div class="col-6 col-xxl-6 col-xl-6 col-lg-7">
+        <i class="fas fa-search wd-override-search-bar">
+        </i>
+        <input class="wd-override-search" type="text" placeholder="       Search Twitter"/>
         <span class="fa-2x">
-          <i class="fas fa-cog text-primary wd-override-gear">
-          </i>
+          <a href="#">
+             <i class="fas fa-cog text-primary wd-override-gear">
+             </i>
+          </a>
         </span>
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -196,7 +209,7 @@
         </ul>
       </div>
 
-      <div class="col-4">
+      <div class="col-4 col-xxl-4 col-xl-4 col-lg-4">
         <ul class="list-group fw-bold">
           <li class="list-group-item">
             Who to follow

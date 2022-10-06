@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+.wd-left-bar {
+  white-space: nowrap;
+}
+
 .wd-override-search {
   border-radius: 50px;
   border-color: lightgray;
@@ -15,6 +19,12 @@ body {
   width: 90%;
   padding: 8px 16px;
   margin-bottom: 10px;
+}
+
+.wd-override-search-bar {
+  position: relative;
+  left: 35px;
+  margin-left: -20px;
 }
 
 .wd-override-gear {
