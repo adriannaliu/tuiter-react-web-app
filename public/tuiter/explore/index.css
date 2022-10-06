@@ -20,6 +20,7 @@ body {
 .wd-override-gear {
   float: right;
   padding: 15px;
+  margin-right: -15px;
 }
 
 .wd-spacex-override {
@@ -34,11 +35,63 @@ body {
   font-size: 7px;
 }
 
-.wd-override-icons {
-  font-size: 9px;
+.wd-override-more {
+  font-size: 8px;
+  margin-left: 0;
+}
+
+.wd-override-more i {
+  margin-left: -2px;
+}
+
+.wd-picture-caption {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+
+.wd-topic {
+  margin-bottom: 0;
+}
+
+.wd-account {
+  margin-bottom: 0;
+}
+
+.wd-content {
+  margin-bottom: 0;
+}
+
+.wd-tweets {
+  margin-bottom: 0;
+}
+
+.wd-tweet-photos {
+  display: inline;
+  float: right;
+  width: 90px;
+  height: 90px;
+  vertical-align: middle;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.wd-handle {
+  margin-bottom: 0;
 }
 
 .btn-primary.wd-override-follow {
   border-radius: 50px;
   float: right;
+  margin-top: 5px;
+}
+
+.wd-follow-logo {
+  display: inline;
+  float: left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50px;
+  margin-right: 20px;
 }

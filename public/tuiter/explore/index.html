@@ -56,10 +56,10 @@
           </li>
           <li class="list-group-item">
             <span class="fa-stack wd-override-more">
-                <i class="fas fa-circle fa-stack-2x">
-                </i>
-                <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse">
-                </i>
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse">
+              </i>
             </span>
             More
           </li>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="col-6">
-        <input class="wd-override-search" type="text" placeholder="Search Twitter"/>
+        <input class="wd-override-search fa-font-awesome" type="text" placeholder="&#xf002; Search Twitter"/>
         <span class="fa-2x">
           <i class="fas fa-cog text-primary wd-override-gear">
           </i>
@@ -95,7 +95,7 @@
         <div class="card border-0">
           <img class="img-fluid wd-spacex-override" src="spacex.jpg">
           <div class="card-img-overlay">
-            <h2 class="text-white fw-bold">
+            <h2 class="text-white fw-bold wd-picture-caption">
               SpaceX's Starship
             </h2>
           </div>
@@ -103,10 +103,13 @@
         <ul class="list-group">
           <li class="list-group-item">
             <div class="wd-tweets">
-              <p class="text-muted">
+              <span>
+                <img src="react.svg" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
                 Web Development
               </p>
-              <p class="fw-bold">
+              <p class="fw-bold wd-account">
                 ReactJS
                 <span class="fa-stack wd-override-check">
                   <i class="fas fa-circle fa-stack-2x">
@@ -118,7 +121,7 @@
                   - 2h
                 </span>
               </p>
-              <p class="fw-bold">
+              <p class="fw-bold wd-content">
                 React.js is a component based front end library that makes it very easy to build
                 Single Page Applications or SPAs
               </p>
@@ -126,7 +129,10 @@
           </li>
           <li class="list-group-item">
             <div class="wd-tweets">
-              <p class="fw-bold">
+              <span>
+                <img src="javascript.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="fw-bold wd-account">
                 JavaScript
                 <span class="fa-stack wd-override-check">
                   <i class="fas fa-circle fa-stack-2x">
@@ -138,33 +144,39 @@
                   - 2h
                 </span>
               </p>
-              <p class="fw-bold">
+              <p class="fw-bold wd-content">
                 JavaScript is a programming language that can run on browsers as well as desktops
               </p>
-              <p class="text-muted">
+              <p class="text-muted wd-tweets">
                 123K Tweets
               </p>
             </div>
           </li>
           <li class="list-group-item">
             <div class="wd-tweets">
-              <p class="text-muted">
+              <span>
+                <img src="jquery.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
                 Web Development
               </p>
-              <p class="fw-bold">
+              <p class="fw-bold wd-content">
                 jQuery
               </p>
-              <p class="text-muted">
+              <p class="text-muted wd-tweets">
                 123K Tweets
               </p>
             </div>
           </li>
           <li class="list-group-item">
             <div class="wd-tweets">
-              <p class="text-muted">
+              <span>
+                <img src="nodejs.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
                 Web Development
               </p>
-              <p class="fw-bold">
+              <p class="fw-bold wd-account">
                 NodeJS
                 <span class="fa-stack wd-override-check">
                   <i class="fas fa-circle fa-stack-2x">
@@ -176,7 +188,7 @@
                   - 2h
                 </span>
               </p>
-              <p class="text-muted">
+              <p class="text-muted wd-tweets">
                 123K Tweets
               </p>
             </div>
@@ -190,6 +202,10 @@
             Who to follow
           </li>
           <li class="list-group-item">
+            <img src="java.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
             Java
             <span class="fa-stack wd-override-check">
               <i class="fas fa-circle fa-stack-2x">
@@ -197,14 +213,15 @@
               <i class="fas fa-check fa-stack-1x fa-inverse">
               </i>
             </span>
-            <p class="text-muted fw-normal">
+            <p class="text-muted fw-normal wd-handle">
               @Java
             </p>
+          </li>
+          <li class="list-group-item">
+            <img src="relaspace.webp" class="wd-follow-logo"/>
             <button class="btn btn-primary wd-override-follow">
               Follow
             </button>
-          </li>
-          <li class="list-group-item">
             Relativity Space
             <span class="fa-stack wd-override-check">
               <i class="fas fa-circle fa-stack-2x">
@@ -212,11 +229,15 @@
               <i class="fas fa-check fa-stack-1x fa-inverse">
               </i>
             </span>
-            <p class="text-muted fw-normal">
+            <p class="text-muted fw-normal wd-handle">
               @relativityspace
             </p>
           </li>
           <li class="list-group-item">
+            <img src="virgin.svg" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
             Virgin Galactic
             <span class="fa-stack wd-override-check">
               <i class="fas fa-circle fa-stack-2x">
@@ -224,11 +245,15 @@
               <i class="fas fa-check fa-stack-1x fa-inverse">
               </i>
             </span>
-            <p class="text-muted fw-normal">
+            <p class="text-muted fw-normal wd-handle">
               @virgingalactic
             </p>
           </li>
           <li class="list-group-item">
+            <img src="nasa.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
             NASA
             <span class="fa-stack wd-override-check">
               <i class="fas fa-circle fa-stack-2x">
@@ -236,11 +261,15 @@
               <i class="fas fa-check fa-stack-1x fa-inverse">
               </i>
             </span>
-            <p class="text-muted fw-normal">
+            <p class="text-muted fw-normal wd-handle">
               @NASA
             </p>
           </li>
           <li class="list-group-item">
+            <img src="tesla.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
             Tesla
             <span class="fa-stack wd-override-check">
               <i class="fas fa-circle fa-stack-2x">
@@ -248,7 +277,7 @@
               <i class="fas fa-check fa-stack-1x fa-inverse">
               </i>
             </span>
-            <p class="text-muted fw-normal">
+            <p class="text-muted fw-normal wd-handle">
               @Tesla
             </p>
           </li>
