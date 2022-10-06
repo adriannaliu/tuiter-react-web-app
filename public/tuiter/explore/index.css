@@ -25,3 +25,20 @@ body {
 .wd-spacex-override {
   margin-top: 10px;
 }
+
+.wd-tweets {
+  font-size: 15px;
+}
+
+.wd-override-check {
+  font-size: 7px;
+}
+
+.wd-override-icons {
+  font-size: 9px;
+}
+
+.btn-primary.wd-override-follow {
+  border-radius: 50px;
+  float: right;
+}
