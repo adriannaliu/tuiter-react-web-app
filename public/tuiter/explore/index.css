@@ -2,10 +2,15 @@ body {
   margin-top: 10px;
 }
 
+.list-group {
+  margin-top: 10px;
+}
+
 .btn-primary.wd-override-tweet-btn {
   border-radius: 50px;
   margin-top: 10px;
   width: 100%;
+  min-width: 75%;
   table-layout: fixed;
 }
 
@@ -17,12 +22,13 @@ body {
   border-radius: 50px;
   border-color: lightgray;
   border-style: solid;
-  width: 90%;
-  padding: 8px 16px;
+  width: 75%;
+  max-width: 90%;
+  padding: 8px 40px;
   margin-bottom: 10px;
 }
 
-.wd-override-search-bar {
+.wd-override-search-icon {
   position: relative;
   left: 35px;
   margin-left: -20px;
