@@ -40,8 +40,12 @@ body {
   margin-right: -15px;
 }
 
+.wd-navbar {
+  margin-bottom: 10px;
+}
+
 .wd-spacex-override {
-  margin-top: 10px;
+  border-radius: 0;
 }
 
 .wd-tweets {

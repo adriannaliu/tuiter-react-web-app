@@ -13,7 +13,7 @@ const ExploreComponent = () => {
          </i>
       </a>
     </span>
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs wd-navbar">
       <li class="nav-item">
         <a class="nav-link active" href="../for-you.html">For you</a>
       </li>
@@ -30,7 +30,7 @@ const ExploreComponent = () => {
         </a>
       </li>
     </ul>
-    <div class="card border-0">
+    <div class="card">
       <img class="img-fluid wd-spacex-override" src="../../images/spacex.jpg">
       <div class="card-img-overlay">
         <h2 class="fw-bold wd-picture-caption">
