@@ -9,7 +9,7 @@ const WhoToFollowListItem = (who) => {
       </button>
       <div>
         ${who.userName}
-        <span class="fa-stack wd-override-check">-->
+        <span class="fa-stack wd-override-check">
           <i class="fas fa-circle fa-stack-2x">
           </i>
           <i class="fas fa-check fa-stack-1x wd-check-mark">
