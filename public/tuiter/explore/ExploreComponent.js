@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index.js";
 import LinkItem from "./LinkItem.js";
 import links from "./links.js";
 
