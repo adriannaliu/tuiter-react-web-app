@@ -58,7 +58,7 @@ const NavigationSidebar = () => {
         <span class="fa-stack wd-override-more">
           <i class="fas fa-circle fa-stack-2x">
           </i>
-          <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse">
+          <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-dots">
           </i>
         </span>
         <span class="d-none d-xxl-inline d-xl-inline">

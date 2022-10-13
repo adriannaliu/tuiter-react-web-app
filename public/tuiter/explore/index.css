@@ -20,12 +20,12 @@ body {
 
 .wd-override-search {
   border-radius: 50px;
-  border-color: lightgray;
-  border-style: solid;
+  border-style: none;
   width: 75%;
   max-width: 90%;
   padding: 8px 40px;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 .wd-override-search-icon {
@@ -65,10 +65,15 @@ body {
   margin-left: -2px;
 }
 
+.wd-dots {
+  color: black;
+}
+
 .wd-picture-caption {
   position: absolute;
   bottom: 0;
   left: 1%;
+  color: rgb(47, 51, 54);
 }
 
 .wd-topic {

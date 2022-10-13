@@ -12,7 +12,6 @@ function exploreComponent() {
        </div>
        <div class="col-10 col-lg-7 col-xl-6">
         ${ExploreComponent()}
-        ${PostSummaryList()}
        </div>
        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
         ${WhoToFollowList()}

@@ -3,14 +3,14 @@ export default [
     topic: "Web Development",
     userName: "ReactJS",
     time: "2h",
-    image: "../../images/javascript.png",
+    image: "../../images/react.svg",
     title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
   },
   {
     topic: "",
     userName: "JavaScript",
     time: "1 day",
-    image: "../../images/react.svg",
+    image: "../../images/javascript.png",
     title: "JavaScript is a programming language that can run on browsers as well as desktops",
   },
   {
@@ -18,7 +18,7 @@ export default [
     userName: "",
     time: "last week",
     image: "../../images/jquery.png",
-    title: "",
+    title: "jQuery",
   },
   {
     topic: "Web Development",
