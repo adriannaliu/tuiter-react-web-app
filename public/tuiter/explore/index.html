@@ -3,165 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
   <link href="index.css"
-        rel="stylesheet"/>
-  <link href="../styles.css"
         rel="stylesheet"/>
 </head>
 <body>
-  <div>
-    <input class="wd-search-bar" type="text" placeholder="&#128269; Search Twitter"/>
-    <span>
-      <a class="wd-gear-icon" href="explore-settings.html">&#x2699;</a>
-    </span>
-    <ul class="wd-top-bar">
-      <li class="wd-for-you-link">
-        <a href="#">For you</a>
-      </li>
-      <li>
-        <a href="#">Trending</a>
-      </li>
-      <li>
-        <a href="#">COVID-19</a>
-      </li>
-      <li>
-        <a href="#">News</a>
-      </li>
-      <li>
-        <a href="#">Sports</a>
-      </li>
-      <li>
-        <a href="#">Entertainment</a>
-      </li>
-    </ul>
-  </div>
-  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-2 col-xxl-2 col-xl-2 col-lg-1">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action">
+            <i class="fab fa-twitter">
+            </i>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-home">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Home
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action active">
+            <i class="fas fa-hashtag">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Explore
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-bell">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Notifications
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-envelope">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Messages
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-bookmark">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Bookmarks
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-list">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Lists
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <i class="fas fa-user">
+            </i>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              Profile
+            </span>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <span class="fa-stack wd-override-more">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <span class="d-none d-xxl-inline d-xl-inline">
+              More
+            </span>
+          </li>
+        </ul>
+        <button class="btn btn-primary wd-override-tweet-btn">
+          Tuit
+        </button>
+      </div>
 
-  <div class="wd-suggested-posts">
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        Trending in Science
+      <div class="col-6 col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+        <i class="fas fa-search wd-override-search-icon">
+        </i>
+        <input class="wd-override-search" type="text" placeholder="Search Twitter"/>
+        <span class="fa-2x">
+          <a href="#">
+             <i class="fas fa-cog text-primary wd-override-gear">
+             </i>
+          </a>
+        </span>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="../for-you.html">For you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../trending.html">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../sports.html">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../entertainment.html">
+              <span class="d-none d-md-inline d-lg-inline">
+                Entertainment
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="card border-0">
+          <img class="img-fluid wd-spacex-override" src="spacex.jpg">
+          <div class="card-img-overlay">
+            <h2 class="text-white fw-bold wd-picture-caption">
+              SpaceX's Starship
+            </h2>
+          </div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="wd-tweets">
+              <span>
+                <img src="react.svg" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
+                Web Development
+              </p>
+              <p class="fw-bold wd-account">
+                ReactJS
+                <span class="fa-stack wd-override-check">
+                  <i class="fas fa-circle fa-stack-2x">
+                  </i>
+                  <i class="fas fa-check fa-stack-1x fa-inverse">
+                  </i>
+                </span>
+                <span class="text-muted fw-normal">
+                  - 2h
+                </span>
+              </p>
+              <p class="fw-bold wd-content">
+                React.js is a component based front end library that makes it very easy to build
+                Single Page Applications or SPAs
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="wd-tweets">
+              <span>
+                <img src="javascript.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="fw-bold wd-account">
+                JavaScript
+                <span class="fa-stack wd-override-check">
+                  <i class="fas fa-circle fa-stack-2x">
+                  </i>
+                  <i class="fas fa-check fa-stack-1x fa-inverse">
+                  </i>
+                </span>
+                <span class="text-muted fw-normal">
+                  - 2h
+                </span>
+              </p>
+              <p class="fw-bold wd-content">
+                JavaScript is a programming language that can run on browsers as well as desktops
+              </p>
+              <p class="text-muted wd-tweets">
+                123K Tweets
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="wd-tweets">
+              <span>
+                <img src="jquery.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
+                Web Development
+              </p>
+              <p class="fw-bold wd-content">
+                jQuery
+              </p>
+              <p class="text-muted wd-tweets">
+                123K Tweets
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="wd-tweets">
+              <span>
+                <img src="nodejs.png" class="wd-tweet-photos"/>
+              </span>
+              <p class="text-muted wd-topic">
+                Web Development
+              </p>
+              <p class="fw-bold wd-account">
+                NodeJS
+                <span class="fa-stack wd-override-check">
+                  <i class="fas fa-circle fa-stack-2x">
+                  </i>
+                  <i class="fas fa-check fa-stack-1x fa-inverse">
+                  </i>
+                </span>
+                <span class="text-muted fw-normal">
+                  - 2h
+                </span>
+              </p>
+              <p class="text-muted wd-tweets">
+                123K Tweets
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="wd-post-name">
-        Starship
-      </div>
-      <div>
-        55.5K Tweets
-      </div>
-    </div>
 
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        Sports &#183; Trending
-      </div>
-      <div class="wd-post-name">
-        Joe Rogan
-      </div>
-      <div>
-        5,218 Tweets
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <img src="cuomo.jpg">
-      </div>
-      <div>
-        <br>
-        <span class="wd-post-company">The New York Times</span> &#183; Yesterday
-      </div>
-      <div class="wd-post-name">
-        CNN's Cuomo conundrum: A star anchor with a brother in trouble
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <img src="covid.png">
-      </div>
-      <div>
-        <br>
-        COVID-19 &#183; LIVE
-      </div>
-      <div class="wd-post-name">
-        COVID-19: News and updates for Massachusetts
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <img src="bloomberg.jpeg">
-      </div>
-      <div>
-        <br>
-        <span class="wd-post-company">Bloomberg Opinion</span> &#183; Yesterday
-      </div>
-      <div class="wd-post-name">
-        Thinking about getting a booster? Read this first.
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        Trending in United States
-      </div>
-      <div class="wd-post-name">
-        Wonder Bread
-      </div>
-      <div>
-        1,259 Tweets
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        COVID-19 Updates
-      </div>
-      <div class="wd-post-name">
-        Learn more about the COVID-19 crisis here
-      </div>
-      <div>
-        7.8M Tweets
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        College Football &#183; Sports
-      </div>
-      <div class="wd-post-name">
-        Did you catch the most recent football games between the Ivies?
-      </div>
-      <div>
-        12.7K Tweets
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        Bullet Train Reviews &#183; Entertainment
-      </div>
-      <div class="wd-post-name">
-        Have you seen the new movie Bullet Train yet? Here's what critics are saying
-      </div>
-      <div>
-        5,390 Tweets
-      </div>
-    </div>
-
-    <div class="wd-post-separator">
-      <div>
-        <br>
-        Entertainment &#183; LIVE
-      </div>
-      <div class="wd-post-name">
-        Breaking news at this Reality TV set
+      <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
+        <ul class="list-group fw-bold">
+          <li class="list-group-item">
+            Who to follow
+          </li>
+          <li class="list-group-item">
+            <img src="java.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
+            Java
+            <span class="fa-stack wd-override-check">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-check fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <p class="text-muted fw-normal wd-handle">
+              @Java
+            </p>
+          </li>
+          <li class="list-group-item">
+            <img src="relaspace.webp" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
+            Relativity Space
+            <span class="fa-stack wd-override-check">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-check fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <p class="text-muted fw-normal wd-handle">
+              @relativityspace
+            </p>
+          </li>
+          <li class="list-group-item">
+            <img src="virgin.svg" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
+            Virgin Galactic
+            <span class="fa-stack wd-override-check">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-check fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <p class="text-muted fw-normal wd-handle">
+              @virgingalactic
+            </p>
+          </li>
+          <li class="list-group-item">
+            <img src="nasa.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
+            NASA
+            <span class="fa-stack wd-override-check">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-check fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <p class="text-muted fw-normal wd-handle">
+              @NASA
+            </p>
+          </li>
+          <li class="list-group-item">
+            <img src="tesla.png" class="wd-follow-logo"/>
+            <button class="btn btn-primary wd-override-follow">
+              Follow
+            </button>
+            Tesla
+            <span class="fa-stack wd-override-check">
+              <i class="fas fa-circle fa-stack-2x">
+              </i>
+              <i class="fas fa-check fa-stack-1x fa-inverse">
+              </i>
+            </span>
+            <p class="text-muted fw-normal wd-handle">
+              @Tesla
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -1,94 +1,114 @@
-.wd-search-bar {
+body {
+  margin-top: 10px;
+}
+
+.list-group {
+  margin-top: 10px;
+}
+
+.btn-primary.wd-override-tweet-btn {
   border-radius: 50px;
-  padding: 14px 16px;
-  font-size: 15px;
-  color: white;
-  background-color: rgb(47, 51, 54);
-  border-style: solid;
-  border-color: rgb(47, 51, 54);
-  width: auto;
-  margin: 0;
-}
-
-.wd-gear-icon {
-  color: rgb(29, 161, 242);
-  float: right;
-  padding: 14px 16px;
-  font-size: 30px;
-  margin-right: 12px;
-  text-decoration: none;
-}
-
-.wd-top-bar {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  margin-top: 10px;
   width: 100%;
-  margin: 0;
+  min-width: 75%;
+  table-layout: fixed;
+}
+
+.wd-left-bar {
+  white-space: nowrap;
+}
+
+.wd-override-search {
+  border-radius: 50px;
+  border-color: lightgray;
+  border-style: solid;
+  width: 75%;
+  max-width: 90%;
+  padding: 8px 40px;
+  margin-bottom: 10px;
+}
+
+.wd-override-search-icon {
+  position: relative;
+  left: 35px;
+  margin-left: -20px;
+}
+
+.wd-override-gear {
+  float: right;
+  padding: 15px;
+  margin-right: -15px;
+}
+
+.wd-spacex-override {
+  margin-top: 10px;
+}
+
+.wd-tweets {
+  font-size: 15px;
+}
+
+.wd-override-check {
+  font-size: 7px;
+}
+
+.wd-override-more {
+  font-size: 8px;
+  margin-left: 0;
+}
+
+.wd-override-more i {
+  margin-left: -2px;
+}
+
+.wd-picture-caption {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+
+.wd-topic {
+  margin-bottom: 0;
+}
+
+.wd-account {
+  margin-bottom: 0;
+}
+
+.wd-content {
+  margin-bottom: 0;
+}
+
+.wd-tweets {
+  margin-bottom: 0;
+}
+
+.wd-tweet-photos {
+  display: inline;
+  float: right;
+  width: 90px;
+  height: 90px;
+  vertical-align: middle;
+  border-radius: 10px;
   padding: 0;
 }
 
-hr {
-  border: 10px solid rgb(47, 51, 54);
-  margin: 0;
+.wd-handle {
+  margin-bottom: 0;
 }
 
-.wd-top-bar li {
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 16px;
-  list-style-type: none;
-}
-
-.wd-top-bar li a {
-  text-decoration: none;
-  color: rgb(110, 118, 125);
-}
-
-.wd-top-bar > .wd-for-you-link a {
-  color: rgb(29, 161, 242);
-  border-bottom: 3px solid rgb(29, 161, 242);
-  border-radius: 2px;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-.wd-suggested-posts {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-  margin: 0;
-}
-
-.wd-post-name {
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-}
-
-.wd-post-separator {
-  border-bottom: 1px solid rgb(47, 51, 54);
-  padding-bottom: 20px;
-  margin: 0;
-  height: 100px;
-}
-
-.wd-post-company {
-  color: white;
-  font-weight: bold;
-}
-
-.wd-post-separator img {
-  display: inline;
-  width: 100px;
-  height: 100px;
+.btn-primary.wd-override-follow {
+  border-radius: 50px;
   float: right;
-  vertical-align: middle;
-  border-radius: 20px;
-  padding-top: 10px;
-  margin-right: 16px;
+  margin-top: 5px;
 }
 
-span {
-  margin: 0;
+.wd-follow-logo {
+  display: inline;
+  float: left;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50px;
+  margin-right: 20px;
 }
