@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../../nav"
 import PostSummaryList from "../post-summary-list";
 import "../index.css";
 const ExploreComponent = () => {

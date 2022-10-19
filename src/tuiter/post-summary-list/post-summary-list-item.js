@@ -18,9 +18,9 @@ const PostSummaryItem = (
               {post.topic}
             </div>
             <div className="fw-bold">
-              {post.userName}
+              {post.userName} {' '}
               <span className="text-muted fw-normal">
-                &middot; {post.time}
+                &middot; {' '} {post.time}
               </span>
             </div>
             <div className="fw-bold">

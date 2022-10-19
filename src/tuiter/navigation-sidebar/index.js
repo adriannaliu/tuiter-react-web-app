@@ -8,39 +8,66 @@ const NavigationSidebar = (
   return (
       <div className="list-group">
         <a className="list-group-item">
-          Tuiter
+          <i className="bi bi-twitter fa-2x"/>
+          <span class="d-none d-xxl-inline d-xl-inline">
+            {' '} Tuiter
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'home'?'active':''}`}>
-          Home
+          <i className="bi bi-house-fill fa-2x"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Home
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
-          Explore
+          <i className="bi bi-hash"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Explore
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-          Notifications
+          <i className="bi bi-bell-fill"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Notifications
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-          Messages
+          <i className="bi bi-envelope-fill"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Messages
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-          Bookmarks
+          <i className="bi bi-bookmark-fill"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Bookmarks
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-          Lists
+          <i className="bi bi-list-ul"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Lists
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-          Profile
+          <i className="bi bi-person-fill"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} Profile
+          </span>
         </a>
         <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-          More
+          <i className="bi bi-three-dots"/>
+          <span className="d-none d-xxl-inline d-xl-inline">
+            {' '} More
+          </span>
         </a>
         <button className="btn btn-primary rounded-pill wd-tuit-btn">
           Tuit
