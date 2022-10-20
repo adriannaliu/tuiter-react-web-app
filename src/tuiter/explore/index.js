@@ -29,8 +29,8 @@ const ExploreComponent = () => {
           <li className="nav-item">
             <a className="nav-link" href="#top">Sports</a>
           </li>
-          <li className="nav-item" href="#top">
-            <a className="nav-link d-none d-md-block d-lg-block">Entertainment</a>
+          <li className="nav-item">
+            <a className="nav-link d-none d-md-block d-lg-block" href="#top">Entertainment</a>
           </li>
         </ul>
         <div className="position-relative mb-2">
