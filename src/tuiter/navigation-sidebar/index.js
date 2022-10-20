@@ -10,9 +10,6 @@ const NavigationSidebar = (
         <div className="list-group wd-nav-sidebar">
           <a className="list-group-item">
             <i className="bi bi-twitter fa-2x"/>
-            <span className="d-none d-xxl-inline d-xl-inline">
-            {' '} Tuiter
-          </span>
           </a>
           <a className={`list-group-item
                     ${active === 'home' ? 'active' : ''}`}>
