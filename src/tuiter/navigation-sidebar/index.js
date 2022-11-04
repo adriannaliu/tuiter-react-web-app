@@ -12,7 +12,7 @@ const NavigationSidebar = (
             <i className="bi bi-twitter fa-2x"/>
           </a>
           <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`} href="#top">
+                    ${active === 'home' ? 'active' : ''}`} href="../tuits/home/index.js">
             <i className="bi bi-house-fill fa-2x"/>
             <span className="d-none d-xxl-inline d-xl-inline">
               {' '} Home
