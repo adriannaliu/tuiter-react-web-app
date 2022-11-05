@@ -10,19 +10,20 @@ import homeReducer from "./tuits/home/home-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import {Route, Routes} from "react-router";
+import {Route, Routes, useLocation} from "react-router";
 import HomeComponent from "./tuits/home";
 import React from "react";
 const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer, home: homeReducer}});
 
 function Tuiter() {
+  const { pathname } = useLocation();
 
   return (
       <Provider store={store}>
         <Nav/>
         <div className="row mt-2">
-          <NavigationSidebar active="explore"/>
+          <NavigationSidebar active={`${pathname.split("/").length === 2} ? ${pathname.split("/")[2]} : 'explore'}`}/>
           <Routes>
             <Route index path="/" element={<ExploreComponent/>}/>
             <Route path="/home" element={<HomeComponent/>}/>

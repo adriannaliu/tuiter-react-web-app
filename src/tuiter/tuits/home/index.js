@@ -1,8 +1,3 @@
-import whoReducer
-  from "../../reducers/who-reducer";
-import tuitsReducer from "../tuits-reducer";
-import { configureStore }
-  from '@reduxjs/toolkit';
 import React from "react";
 import TuitsList from "../tuits-list";
 import WhatsHappening from "./whats-happening";
