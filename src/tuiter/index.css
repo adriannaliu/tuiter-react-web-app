@@ -44,3 +44,12 @@
   text-decoration: none;
   color: black;
 }
+
+.wd-explore-link {
+  text-decoration: none;
+  color: white;
+}
+
+.wd-liked-heart {
+  color: red;
+}

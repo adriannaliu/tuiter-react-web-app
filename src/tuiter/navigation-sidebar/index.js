@@ -14,17 +14,17 @@ const NavigationSidebar = (
               <i className="bi bi-twitter fa-2x"/>
             </a>
             <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`} href="../tuits/home/index.js">
+                    ${active === 'home' ? 'active' : ''}`} href="#top">
               <i className="bi bi-house-fill fa-2x"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-                <Link to="/home" className="wd-home-link">{' '} Home</Link>
+                <Link to="/tuiter/home" className="wd-home-link">{' '} Home</Link>
               </span>
             </a>
             <a className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`} href="#top">
               <i className="bi bi-hash"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-              {' '} Explore
+              <Link to="/tuiter/" className="wd-explore-link">{' '} Explore</Link>
             </span>
             </a>
             <a className={`list-group-item

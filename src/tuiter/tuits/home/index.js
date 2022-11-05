@@ -6,8 +6,6 @@ import { configureStore }
 import React from "react";
 import TuitsList from "../tuits-list";
 import WhatsHappening from "./whats-happening";
-const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
 const HomeComponent = () => {
   return(

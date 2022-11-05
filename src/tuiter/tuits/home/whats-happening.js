@@ -1,9 +1,9 @@
 import {createTuit} from "./home-reducer";
-import {useDispatch, useSelector} from "react-redux";
-import {useState} from "react";
+import {useDispatch} from "react-redux";
+import React, {useState} from "react";
 
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening] = useState({do: ''});
+  const [whatsHappening, setWhatsHappening] = useState({do: ''});
   const dispatch = useDispatch();
   const newTuitHandler = (event) => {
     const doValue = event.target.value;
@@ -18,7 +18,7 @@ const WhatsHappening = () => {
   return (
       <div className="row">
         <div className="col-auto">
-          <img src="/images/nasa.png" width={60}/>
+          <img src="/images/nasa.png" width={60} alt="logo"/>
         </div>
         <div className="col-10">
          <textarea value={whatsHappening.do} placeholder="What's happening?"

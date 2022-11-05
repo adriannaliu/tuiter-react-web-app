@@ -55,7 +55,8 @@ const TuitsItem = (
                     <i className="bi bi-arrow-repeat"/> {' '} {tuit.retuits}
                   </div>
                   <div className="col-3">
-                    <i className="bi bi-heart"/> {' '} {tuit.likes}
+                    <i className={`${tuit.liked === true ? `bi bi-heart-fill wd-liked-heart` : `bi bi-heart`}`}/>
+                    {' '} {tuit.likes}
                   </div>
                   <div className="col-3">
                     <i className="bi bi-share"/>

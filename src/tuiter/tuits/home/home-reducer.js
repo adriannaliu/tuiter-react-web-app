@@ -15,6 +15,7 @@ const templateTuit = {
   "replies": 0,
   "retuits": 0,
   "likes": 0,
+  "tuit": ""
 }
 
 
@@ -31,7 +32,7 @@ const homeSlice = createSlice({
 
     createTuit(state, action) {
       state.unshift({
-        ...action.payload.do,
+        ...action.payload,
         ...templateTuit,
         _id: (new Date()).getTime(),
       })
