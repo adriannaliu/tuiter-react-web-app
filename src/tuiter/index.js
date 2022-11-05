@@ -18,12 +18,20 @@ const store = configureStore(
 
 function Tuiter() {
   const { pathname } = useLocation();
+  let activeTab;
+  console.log(pathname.split("/"))
+  if (pathname.split("/").length === 3) {
+    activeTab = pathname.split("/")[2];
+  }
+  else {
+    activeTab = 'explore';
+  }
 
   return (
       <Provider store={store}>
         <Nav/>
         <div className="row mt-2">
-          <NavigationSidebar active={`${pathname.split("/").length === 2} ? ${pathname.split("/")[2]} : 'explore'}`}/>
+          <NavigationSidebar active={activeTab}/>
           <Routes>
             <Route index path="/" element={<ExploreComponent/>}/>
             <Route path="/home" element={<HomeComponent/>}/>

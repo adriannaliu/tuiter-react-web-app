@@ -17,14 +17,17 @@ const NavigationSidebar = (
                     ${active === 'home' ? 'active' : ''}`} href="#top">
               <i className="bi bi-house-fill fa-2x"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-                <Link to="/tuiter/home" className="wd-home-link">{' '} Home</Link>
+                <Link to="/tuiter/home" className={`${active === 'home' ? `wd-home-link-selected` : `wd-home-link`}`}>
+                  {' '} Home</Link>
               </span>
             </a>
             <a className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`} href="#top">
               <i className="bi bi-hash"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-              <Link to="/tuiter/" className="wd-explore-link">{' '} Explore</Link>
+              <Link to="/tuiter/explore" className={`${active === 'explore' ? `wd-explore-link-selected` : `wd-explore-link`}`}>
+                {' '} Explore
+              </Link>
             </span>
             </a>
             <a className={`list-group-item

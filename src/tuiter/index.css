@@ -45,7 +45,17 @@
   color: black;
 }
 
+.wd-home-link-selected {
+  text-decoration: none;
+  color: white;
+}
+
 .wd-explore-link {
+  text-decoration: none;
+  color: black;
+}
+
+.wd-explore-link-selected {
   text-decoration: none;
   color: white;
 }
