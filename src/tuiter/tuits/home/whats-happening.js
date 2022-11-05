@@ -3,17 +3,13 @@ import {useDispatch} from "react-redux";
 import React, {useState} from "react";
 
 const WhatsHappening = () => {
-  const [whatsHappening, setWhatsHappening] = useState({do: ''});
+  const [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-  const newTuitHandler = (event) => {
-    const doValue = event.target.value;
-    const newTuit = {
-      do: doValue
-    };
-    setWhatsHappening(newTuit);
-  }
   const tuitClickHandler = () => {
-    dispatch(createTuit(whatsHappening));
+    const newTuit = {
+      tuit: whatsHappening
+    }
+    dispatch(createTuit(newTuit));
   }
   return (
       <div className="row">
@@ -21,10 +17,10 @@ const WhatsHappening = () => {
           <img src="/images/nasa.png" width={60} alt="logo"/>
         </div>
         <div className="col-10">
-         <textarea value={whatsHappening.do} placeholder="What's happening?"
+          <textarea value={whatsHappening} placeholder="What's happening?"
                    className="form-control border-0"
-                   onChange={newTuitHandler}>
-         </textarea>
+                   onChange={(event) => setWhatsHappening(event.target.value)}>
+          </textarea>
           <div>
             <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
                     onClick={tuitClickHandler}>

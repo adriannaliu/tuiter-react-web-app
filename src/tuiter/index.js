@@ -19,7 +19,6 @@ const store = configureStore(
 function Tuiter() {
   const { pathname } = useLocation();
   let activeTab;
-  console.log(pathname.split("/"))
   if (pathname.split("/").length === 3) {
     activeTab = pathname.split("/")[2];
   }
