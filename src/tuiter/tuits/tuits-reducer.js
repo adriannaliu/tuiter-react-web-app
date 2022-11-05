@@ -3,7 +3,7 @@ import tuits from './tuits.json';
 
 const tuitsSlice = createSlice({
   name: 'tuits',
-  initialState: tuits
+  initialState: tuits,
 });
 
 export default tuitsSlice.reducer;

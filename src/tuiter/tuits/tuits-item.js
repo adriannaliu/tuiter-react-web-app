@@ -1,5 +1,7 @@
 import React from "react";
-import TuitStatsItem from "./home/tuit-stats-item";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./home/home-reducer";
+
 const TuitsItem = (
     {
       tuit = {
@@ -18,15 +20,23 @@ const TuitsItem = (
       }
     }
 ) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  }
+
   return(
       <li className="list-group-item">
         <div className="row">
           <div className="col-2">
-            <img width={70} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt="logo"/>
+            <img width={50} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt="logo"/>
           </div>
           <div className="col-10">
+            <i className="bi bi-x-lg float-end"
+               onClick={() => deleteTuitHandler(tuit._id)}/>
             <div className="fw-bold">
-              {tuit.userName}
+              {tuit.userName} {' '}
+              <i className="bi bi-patch-check-fill wd-verified"/>
               <span className="text-muted fw-normal">
                 {' '} {tuit.handle} &middot; {' '} {tuit.time}
               </span>
@@ -34,8 +44,24 @@ const TuitsItem = (
             <div className="fw-normal">
               {tuit.tuit}
             </div>
+            <br/>
             <div>
-              <TuitStatsItem/>
+              <li className="wd-stats">
+                <div className="row">
+                  <div className="col-3">
+                    <i className="bi bi-chat"/> {' '} {tuit.replies}
+                  </div>
+                  <div className="col-3">
+                    <i className="bi bi-arrow-repeat"/> {' '} {tuit.retuits}
+                  </div>
+                  <div className="col-3">
+                    <i className="bi bi-heart"/> {' '} {tuit.likes}
+                  </div>
+                  <div className="col-3">
+                    <i className="bi bi-share"/>
+                  </div>
+                </div>
+              </li>
             </div>
           </div>
         </div>

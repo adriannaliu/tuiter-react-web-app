@@ -17,7 +17,7 @@ const NavigationSidebar = (
                     ${active === 'home' ? 'active' : ''}`} href="../tuits/home/index.js">
               <i className="bi bi-house-fill fa-2x"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-                <Link to="/home">{' '} Home</Link>
+                <Link to="/home" className="wd-home-link">{' '} Home</Link>
               </span>
             </a>
             <a className={`list-group-item
