@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -16,8 +17,8 @@ const NavigationSidebar = (
                     ${active === 'home' ? 'active' : ''}`} href="../tuits/home/index.js">
               <i className="bi bi-house-fill fa-2x"/>
               <span className="d-none d-xxl-inline d-xl-inline">
-              {' '} Home
-            </span>
+                <Link to="/home">{' '} Home</Link>
+              </span>
             </a>
             <a className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`} href="#top">

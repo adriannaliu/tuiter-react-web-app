@@ -16,17 +16,18 @@ const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer, home: homeReducer}});
 
 function Tuiter() {
-  const location = useLocation();
+  // const location = useLocation();
+  // console.log(location);
 
   return (
       <Provider store={store}>
         <Nav/>
         <div className="row mt-2">
-          <NavigationSidebar active={location.pathname.split("/")[2]}/>
+          <NavigationSidebar active="explore"/>
           <Routes>
-            <Route exact path="/" element={<ExploreComponent/>} active="explore"/>
-            <Route expact path="/home" element={<HomeComponent/>}/>
-            <Route exact path="/explore" element={<ExploreComponent/>} active="explore"/>
+            <Route index path="/" element={<ExploreComponent/>} /*active="explore"*//>
+            <Route path="/home" element={<HomeComponent/>}/>
+            <Route path="/explore" element={<ExploreComponent/>} /*active="explore"*//>
           </Routes>
           <WhoToFollowList/>
         </div>

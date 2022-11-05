@@ -1,6 +1,5 @@
 import React from "react";
-import TuitStatsItem from "./home/tuit-stats-item";
-const TuitsItem = (
+const TuitStatsItem = (
     {
       tuit = {
         "_id": 234,
@@ -21,25 +20,20 @@ const TuitsItem = (
   return(
       <li className="list-group-item">
         <div className="row">
-          <div className="col-2">
-            <img width={70} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt="logo"/>
+          <div className="col-3">
+            {tuit.replies}
           </div>
-          <div className="col-10">
-            <div className="fw-bold">
-              {tuit.userName}
-              <span className="text-muted fw-normal">
-                {' '} {tuit.handle} &middot; {' '} {tuit.time}
-              </span>
-            </div>
-            <div className="fw-normal">
-              {tuit.tuit}
-            </div>
-            <div>
-              <TuitStatsItem/>
-            </div>
+          <div className="col-3">
+            {tuit.retuits}
+          </div>
+          <div className="col-3">
+            {tuit.likes}
+          </div>
+          <div className="col-3">
+            share
           </div>
         </div>
       </li>
   );
 };
-export default TuitsItem;
+export default TuitStatsItem;
