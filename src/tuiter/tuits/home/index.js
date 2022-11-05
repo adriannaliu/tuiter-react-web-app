@@ -1,36 +1,39 @@
-import Nav from "../nav";
-import NavigationSidebar from "./navigation-sidebar";
+import Nav from "../../../nav";
+import NavigationSidebar from "../../navigation-sidebar";
 import WhoToFollowList
-  from "./who-to-follow-list/index.js";
-import ExploreComponent from "./explore/index.js";
+  from "../../who-to-follow-list/index.js";
 import whoReducer
-  from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
+  from "../../reducers/who-reducer";
+import tuitsReducer from "../tuits-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import React from "react";
+import TuitsList from "../tuits-list";
+import {BrowserRouter} from "react-router-dom";
 const store = configureStore(
-    {reducer: {who: whoReducer,tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
-function Home() {
+function HomeComponent() {
   return (
-      <Provider store={store}>
-        <Nav/>
-        <div className="row mt-2">
-          <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-            <NavigationSidebar active="explore"/>
+      // <BrowserRouter>
+        <Provider store={store}>
+          <Nav/>
+          <div className="row mt-2">
+            <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+              <NavigationSidebar active="explore"/>
+            </div>
+            <div className="col-10 col-md-10 col-lg-7 col-xl-6"
+                 style={{"position": "relative"}}>
+              <TuitsList active="home"/>
+            </div>
+            <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+              <WhoToFollowList/>
+            </div>
           </div>
-          <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-               style={{"position": "relative"}}>
-            <ExploreComponent/>
-          </div>
-          <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            <WhoToFollowList/>
-          </div>
-        </div>
-      </Provider>
+        </Provider>
+      // </BrowserRouter>
   );
 }
 
-export default Home;
+export default HomeComponent;

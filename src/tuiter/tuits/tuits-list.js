@@ -1,10 +1,10 @@
 import React from "react";
 import TuitsItem
-  from "./tuits-reducer.js";
+  from "./tuits-item.js";
 import {useSelector} from "react-redux";
 
 const TuitsList = () => {
-  const tuits = useSelector(state => state.tuits)
+  const tuits = useSelector(state => state.home)
   return(
       <ul className="list-group">
         {

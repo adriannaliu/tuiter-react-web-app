@@ -6,27 +6,29 @@ import ExploreComponent from "./explore/index.js";
 import whoReducer
   from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import homeReducer from "./tuits/home/home-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import {Route, Routes, useLocation} from "react-router";
+import HomeComponent from "./tuits/home";
 const store = configureStore(
-    {reducer: {who: whoReducer,tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer, home: homeReducer}});
 
 function Tuiter() {
+  const location = useLocation();
+
   return (
       <Provider store={store}>
         <Nav/>
         <div className="row mt-2">
-          <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-            <NavigationSidebar active="explore"/>
-          </div>
-          <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-               style={{"position": "relative"}}>
-            <ExploreComponent/>
-          </div>
-          <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            <WhoToFollowList/>
-          </div>
+          <NavigationSidebar active={location.pathname.split("/")[2]}/>
+          <Routes>
+            <Route exact path="/" element={<ExploreComponent/>} active="explore"/>
+            <Route expact path="/home" element={<HomeComponent/>}/>
+            <Route exact path="/explore" element={<ExploreComponent/>} active="explore"/>
+          </Routes>
+          <WhoToFollowList/>
         </div>
       </Provider>
   );

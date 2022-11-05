@@ -8,18 +8,20 @@ const WhoToFollowList = () => {
       (state) => state.who);
 
   return(
-      <ul className="list-group">
-        <li className="list-group-item">
-          <h3>Who to follow</h3>
-        </li>
-        {
-          whoArray.map(who =>
-              <WhoToFollowListItem
-                  key={who._id}
-                  who={who}/>
-          )
-        }
-      </ul>
+      <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+        <ul className="list-group">
+          <li className="list-group-item">
+            <h3>Who to follow</h3>
+          </li>
+          {
+            whoArray.map(who =>
+                <WhoToFollowListItem
+                    key={who._id}
+                    who={who}/>
+            )
+          }
+        </ul>
+      </div>
   );
 };
 
