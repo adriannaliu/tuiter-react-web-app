@@ -16,6 +16,7 @@ const TuitsItem = (
         "replies": 123,
         "retuits": 432,
         "likes": 2345,
+        "dislikes": 0,
         "handle": "@spacex",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
       }
@@ -50,13 +51,13 @@ const TuitsItem = (
             <div>
               <li className="wd-stats">
                 <div className="row">
-                  <div className="col-3">
+                  <div className="col-2">
                     <i className="bi bi-chat"/> {' '} {tuit.replies}
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <i className="bi bi-arrow-repeat"/> {' '} {tuit.retuits}
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <div>
                       Likes: {tuit.likes}
                       <i onClick={() => dispatch(updateTuitThunk({
@@ -64,17 +65,19 @@ const TuitsItem = (
                         likes: tuit.likes + 1
                       }))} className="bi bi-heart-fill wd-liked-heart me-2 text-danger"/>
                     </div>
-                    <div>
-                      Dislikes: {tuit.likes}
-                      <i onClick={() => dispatch(updateTuitThunk({
-                        ...tuit,
-                        likes: tuit.likes - 1
-                      }))} className="bi bi-hand-thumbs-down-fill me-2"/>
-                    </div>
                     {/*<i className={`${tuit.liked === true ? `bi bi-heart-fill wd-liked-heart` : `bi bi-heart`}`}/>*/}
                     {/*{' '} {tuit.likes}*/}
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
+                    <div>
+                      Dislikes: {tuit.dislikes}
+                      <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        dislikes: tuit.dislikes + 1
+                      }))} className="bi bi-hand-thumbs-down-fill me-2"/>
+                    </div>
+                  </div>
+                  <div className="col-2">
                     <i className="bi bi-share"/>
                   </div>
                 </div>
