@@ -32,7 +32,7 @@ const TuitsItem = (
       <li className="list-group-item">
         <div className="row">
           <div className="col-2">
-            <img width={50} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt="logo"/>
+            <img width={50} className="float-left wd-profile-pic" src={`/images/${tuit.image}`} alt="logo"/>
           </div>
           <div className="col-10">
             <i className="bi bi-x-lg float-end"
@@ -59,22 +59,22 @@ const TuitsItem = (
                   </div>
                   <div className="col-2">
                     <div>
-                      Likes: {tuit.likes}
                       <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
                         likes: tuit.likes + 1
                       }))} className="bi bi-heart-fill wd-liked-heart me-2 text-danger"/>
+                      {tuit.likes}
                     </div>
                     {/*<i className={`${tuit.liked === true ? `bi bi-heart-fill wd-liked-heart` : `bi bi-heart`}`}/>*/}
                     {/*{' '} {tuit.likes}*/}
                   </div>
                   <div className="col-2">
                     <div>
-                      Dislikes: {tuit.dislikes}
                       <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
                         dislikes: tuit.dislikes + 1
                       }))} className="bi bi-hand-thumbs-down-fill me-2"/>
+                      {tuit.dislikes}
                     </div>
                   </div>
                   <div className="col-2">

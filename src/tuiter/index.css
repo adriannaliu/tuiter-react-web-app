@@ -63,3 +63,7 @@
 .wd-liked-heart {
   color: red;
 }
+
+.wd-profile-pic {
+  border-radius: 50%;
+}
