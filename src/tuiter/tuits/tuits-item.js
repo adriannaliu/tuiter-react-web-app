@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./home/home-reducer";
+// import {deleteTuit} from "./home/home-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitsItem = (
     {
@@ -22,7 +23,8 @@ const TuitsItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    // dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
   return(
@@ -55,8 +57,22 @@ const TuitsItem = (
                     <i className="bi bi-arrow-repeat"/> {' '} {tuit.retuits}
                   </div>
                   <div className="col-3">
-                    <i className={`${tuit.liked === true ? `bi bi-heart-fill wd-liked-heart` : `bi bi-heart`}`}/>
-                    {' '} {tuit.likes}
+                    <div>
+                      Likes: {tuit.likes}
+                      <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes + 1
+                      }))} className="bi bi-heart-fill wd-liked-heart me-2 text-danger"/>
+                    </div>
+                    <div>
+                      Dislikes: {tuit.likes}
+                      <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes - 1
+                      }))} className="bi bi-hand-thumbs-down-fill me-2"/>
+                    </div>
+                    {/*<i className={`${tuit.liked === true ? `bi bi-heart-fill wd-liked-heart` : `bi bi-heart`}`}/>*/}
+                    {/*{' '} {tuit.likes}*/}
                   </div>
                   <div className="col-3">
                     <i className="bi bi-share"/>

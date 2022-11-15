@@ -14,7 +14,7 @@ import {Route, Routes, useLocation} from "react-router";
 import HomeComponent from "./tuits/home";
 import React from "react";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, home: homeReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer, homeData: homeReducer}});
 
 function Tuiter() {
   const { pathname } = useLocation();
