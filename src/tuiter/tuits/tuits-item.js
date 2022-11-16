@@ -11,7 +11,7 @@ const TuitsItem = (
         "userName": "SpaceX",
         "time": "2h",
         "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-        "image": "../../../public/image/spacex.jpg",
+        "image": "../../../public/images/spacex.jpg",
         "liked": true,
         "replies": 123,
         "retuits": 432,
@@ -32,7 +32,7 @@ const TuitsItem = (
       <li className="list-group-item">
         <div className="row">
           <div className="col-2">
-            <img width={50} className="float-left wd-profile-pic" src={`/images/${tuit.image}`} alt="logo"/>
+            <img width={50} className="float-left wd-profile-pic" src={`../../../images/${tuit.image}`} alt="logo"/>
           </div>
           <div className="col-10">
             <i className="bi bi-x-lg float-end"
