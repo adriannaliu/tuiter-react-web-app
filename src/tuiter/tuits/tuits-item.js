@@ -13,6 +13,7 @@ const TuitsItem = (
         "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
         "image": "../../../public/images/spacex.jpg",
         "liked": true,
+        "disliked": false,
         "replies": 123,
         "retuits": 432,
         "likes": 2345,
